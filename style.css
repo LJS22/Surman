@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+/* Generic Styling */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #fff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body {
+	background-color: #171917;
+	display: flex;
+}
+
+#navContainer {
+	height: 100vh;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 24px 0px 3px -24px #fff;
+}
+
+#logo {
+	height: 20%;
+	width: 100%;
+}
+
+nav {
+	height: 80%;
+	width: 100%;
+}
+
+#navContainer ul {
+	height: 50%;
+	width: 100%;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#navContainer ul li {
+	height: 25%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 24px 3px -24px #fff;
+}
+
+#navContainer ul li:hover {
+	cursor: pointer;
+	background-color: #1e1e1e;
+	border-radius: 15px;
+}
+
+#navContainer ul li:last-child {
+	box-shadow: none;
+}
+
+#navContainer ul li.active {
+	background-color: #1e1e1e;
+	border-radius: 15px;
+}
+
+.pageButton {
+	height: 35px;
+	width: 100%;
+	font-size: 24px;
+}
+
+#pageBorder {
+	height: 100vh;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page {
+	display: none;
+	height: 90%;
+	width: 90%;
+}
+
+.page.active {
+	display: flex;
+}
+
+.page[data-id='home'] {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#carousel {
+	height: 90%;
+	width: 100%;
+}
+
+#carousel img {
+	display: none;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+#carousel img.active {
+	display: block;
+}
+
+#projectSection {
+	height: 100%;
+	width: 100%;
+	border: 1px solid #fff;
+	background-color: #1e1e1e;
+	position: relative;
+}
+
+#projectNav {
+	height: 10%;
+	width: 100%;
+}
+
+#projectNav ul {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#projectNav ul li {
+	height: 100%;
+	width: calc(100% / 6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border: 1px solid #fff;
+	background-color: #151819;
+}
+
+#projectNav ul li:hover {
+	cursor: pointer;
+}
+
+#projectNav ul li.active {
+	background-color: #1e1e1e;
+	border-bottom: none;
+}
+
+.projectTextSection {
+	height: 90%;
+	width: 100%;
+}
+
+.projectText {
+	display: none;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.projectText.active {
+	display: flex;
+}
+
+.projectText ul {
+	height: 100%;
+	width: 90%;
+	/display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.projectText li {
+	font-size: 22px;
+	text-align: center;
+}
+
+#contactContainer {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#contactContainer h3 {
+	height: 10%;
+	width: 100%;
+}
+
+#contactInfo {
+	height: 90%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contactText {
+	height: auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactInfo p {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+#contactMap {
+	height: 90%;
+	width: 50%;
+}
